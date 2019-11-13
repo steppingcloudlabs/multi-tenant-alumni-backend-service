@@ -54,16 +54,7 @@ app.get('/', (req, res, next) => {
         message: 'Faad chal rha hai.',
     });
 });
-app.get('/hi', (req, res, next) => {
-    res.send({
-        code: 200,
-        message: 'mushi mushi',
-    });
-});
-app.use(
-    '/api/v1',
-    require('./routes/routes')({ logger, db: mongo }),
-);
+
 /**
  * Server
  */
